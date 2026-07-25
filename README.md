@@ -5,7 +5,7 @@ Directly compatible with pvvx's [TLSRPGM](https://github.com/pvvx/TLSRPGM) as a 
 
 Uses PIO to drive SWS directly so ime way more consistent than UART shenanigans.
 
----
+This should hopefully be straight-forward to port to other boards or even the RP2350, haven't looked into that.
 
 ## Wiring
 
@@ -15,8 +15,6 @@ Uses PIO to drive SWS directly so ime way more consistent than UART shenanigans.
 | **GP3** | `RST` | driven low or released open drain, never driven high. |
 | **GP4** | `PWR` | 12 mA?, high at boot. Optional - the original had this but I didn't bother connecting it just did straight 3V3 so prob don't bother. |
 | **GND** | `GND` | |
-
----
 
 ## Credit
 
